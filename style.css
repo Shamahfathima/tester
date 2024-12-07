@@ -25,3 +25,8 @@ button{
     border-radius: 10px;
     
 }
+
+.dashboard{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}

@@ -7,6 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ss", $_POST["fname"], $_POST["email"]);
     $stmt->execute();
 
+    // TODO: include password hashing
+
     $result = $stmt->get_result();
         
     if ($result) {
@@ -18,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     } else {
         // Return true if the query executed successfully with no result set
+        header("Location: dashboard.php");
         return true;
     }
 }
