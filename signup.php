@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Return true if the query executed successfully with no result set
         header("Location: dashboard.php");
+        // todo done
         return true;
     }
 }
