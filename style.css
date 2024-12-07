@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    height:100vh;
+    top:50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    border:2px solid saddlebrown;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+button{
+    background-color: #0a1aa7;
+    color: beige;
+    border-radius: 10px;
+    
+}
